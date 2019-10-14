@@ -4,6 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="horizontal"
+    tools:context="rivo.project.utsapp.activities.MainActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        class="rivo.project.utsapp.fragments.ListMenuFragment"
+        android:layout_width="350px"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        class="rivo.project.utsapp.fragments.DetailsFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment"
+        tools:layout_editor_absoluteY="-16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
