@@ -10,9 +10,6 @@ import android.widget.ListView;
 
 import rivo.project.utsapp.R;
 
-/**
- * Created by tutlane on 06-08-2017.
- */
 public class ListMenuFragment extends ListFragment {
     String[] users = new String[] { "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday" };
     String[] location = new String[]{"Malang","Malang","Malang","Malang","Malang","Malang"};
@@ -28,6 +25,6 @@ public class ListMenuFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         DetailsFragment txt = (DetailsFragment)getFragmentManager().findFragmentById(R.id.fragment2);
         txt.change("Day: "+ users[position],"Location : "+ location[position]);
-        getListView().setSelector(android.R.color.holo_blue_dark);
+        getListView().setSelector(android.R.color.holo_green_light);
     }
 }

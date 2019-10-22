@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0079D6">
+    android:background="#757575">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,12 +15,22 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="200px"
         android:textColor="#ffffff"
+        android:clickable="true"
         android:id="@+id/Location"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="200px"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:clickable="true"-->
+<!--        android:id="@+id/TextAdd"/>-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="200px"
-        android:textColor="#ffffff"
+        android:text="Insert Task"
+        android:textColor="#000000"
         android:id="@+id/Add"
         android:onClick="handleAdd"/>
 
